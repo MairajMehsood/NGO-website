@@ -1,0 +1,395 @@
+
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/*color: #616060;*/
+
+}
+.logo{
+	width: 180px;
+	height: 100px;
+	margin-left: 80px;
+}
+u-bar{
+	text-align: center;
+
+}
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+     /*color: #fff;*/
+}
+.menu-bar ul li{
+	width: 120px;
+	margin: 20px;
+	padding-top: 15px;
+
+}
+.menu-bar ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.menu-bar ul li:hover{
+	background-color: #2bab0d;
+	border-radius: 3px;
+	    transition: all .3s ease;
+}
+.sub-menu-1{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+background: rgb(0,100,0);
+margin-top: 15px;
+margin-left: -15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width: 240px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+		border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a{
+	color: #fff;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color: #fff;
+}
+.menu-bar .fa{
+	margin-left: 8px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.up-nar {
+	width: 100%;
+	padding-top: 18px;
+	background:#f1f1f1;
+	text-align: right;
+
+}
+.up-nar .fa {
+	padding-left: 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.up-nar .fa:hover{
+	color: green;	
+}
+.up-nar  button{
+	margin-right: 30px;
+	margin-left: 10px;
+	padding: 10px 18px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	border:2px solid ;
+	color: #fff;
+	cursor: pointer;
+background: #008b44;
+   
+}
+/*start main menue*/
+ .bg-img{
+	background-image: url(img/0.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+}
+.main-menu .container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.main-text{
+	    padding: 38px 0px 0px 63px;
+	        font-family: 'Kaushan Script';	
+}
+.main-text h1{
+	    font-size: 90px;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
+.main-text p{
+  font-size: 30px;
+    color: #ffff;
+    font-weight: 400;
+  z-index: 2;
+}
+/*about tcf*/
+.about-text{
+	    text-align: center;
+    padding-top: 60px;
+    font-family: 'Noto Serif', serif;
+
+}
+#About_start{
+
+ font-family: sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+ #About_start h4{
+	margin-top: 20px;
+}
+.schol{
+	background-color:#f6f6f6;
+	padding: 50px 0px;
+	margin-top: 20px;
+
+}
+#About_start p{
+	    font-size: 24px;
+    line-height: 34px;
+    color: #616060;
+}
+#About_start  h6{
+	 font-size: 20px;
+    line-height: 34px;
+    color: #616060;
+}
+#About_start  h4{
+	 font-size: 30px;
+    line-height: 34px;
+    color: #616060;
+}
+/*counter*/
+.stat{
+	background: #382727;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	color: #ded8d8;
+	background-attachment: fixed;
+	margin-top: 60px;
+}
+.stat-items p { 
+font-weight: bold;
+font-size: 25px;
+
+
+}
+.stat h2{
+	font-weight: bold;
+	letter-spacing: 1px;
+
+}
+.stat h4{
+	color: green;
+	font-weight: bold;
+}
+/*model*/
+#model{
+	margin-top: 20px;
+	color: #616060;
+	
+}
+#model h2{
+	text-align: center;
+	margin-top: 50px;
+	color: #616060;
+	 font-family: 'Noto Serif', serif;
+
+}
+#model h5{
+	    font-size: 24px;
+    line-height: 34px;
+    color: #616060;
+}
+
+#model  h4{
+	    font-size: 24px;
+    line-height: 34px;
+    color: #616060;
+	margin-top: 20px;
+}
+/*schools*/
+.schools {
+	text-align: center;
+	    margin-top: 65px;
+	    margin-bottom: 80px;
+	        background: #f6f6f6;
+	        padding: 50px 0;
+}
+.schools p{
+	font-size: 23px;
+	line-height: 26px;
+	color: #616060;
+	margin: 20px 0px;
+}
+.schools h2{
+	    color: #616060;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    /*margin: 0 0 10px;*/
+     font-family: 'Noto Serif', serif;
+ }
+ .schools img:hover{
+ 	opacity: .5;
+ 	transition: all .3s ease;
+ }
+ .schools .btn{
+
+ 	margin-top: 30px;
+ 	color: #fff;
+ 	text-transform: uppercase;
+ 	padding: 15px 30px;
+ 	background: #008b44;
+ 	line-height: 20px;
+ }
+ .schools .btn:hover{
+ 	background-color: orange;
+ }
+ .btn2{
+ 	/*margin-left: 400px;*/
+ 	margin-top: 30px;
+ 	color: #fff;
+ 	margin-left: 40%;
+ margin-bottom: 30px;
+ 	text-transform: uppercase;
+ 	padding: 10px 15px;
+ 	background: #008b44;
+ 	line-height: 20px;
+ }
+ .btn2:hover{
+ 	cursor: pointer;
+ 	background-color: orange;
+ 	border-color: orange;
+ }
+ /*/gotop*/
+
+ .gotop{
+ 	position: fixed;
+ 	width: 50px;
+ 	height: 50px;
+ 	background-color: #27ae60;
+ 	bottom: 40px;
+ 	right: 50px;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	line-height: 50px;
+ 	color:white;
+ 	font-size: 32px;
+ 	border-radius: 50px;
+ }
+  .gotop:hover{
+  	background-color:orange;
+  	color:white;
+  }
+  /*stories and news*/
+  h3.h3{text-align:center;padding:1.5em 0em;text-transform:capitalize;font-size:1.5em;}
+
+/******************  News Slider Demo-1 *******************/
+.post-slide{overflow:hidden;margin-right:15px;background-color:#fff!important}
+.post-slide .post-img{float:left;width:50%;position:relative;margin-right:30px}
+.post-slide .post-img img{width:100%;height:auto}
+.post-slide .post-date{background:#ec3c6a;color:#fff;position:absolute;top:0;right:0;display:block;padding:2% 3%;width:60px;height:60px;text-align:center;transition:all .5s ease}
+.post-slide .date{display:block;font-size:20px;font-weight:700}
+.post-slide .month{display:block;font-size:11px;text-transform:uppercase}
+.post-slide .post-review{padding:5% 3% 1% 0;border-top:3px solid #38cfd8}
+.post-slide:hover .post-review{border-top-color:#ec3c6a}
+.post-slide .post-title{margin:0 0 10px 0}
+.post-slide .post-title a{font-size:14px;color:#333;text-transform:uppercase}
+.post-slide .post-title a:hover{text-decoration:none;font-weight:700}
+.post-slide .post-bar{padding:0;list-style:none;text-transform:uppercase;position:relative;margin-bottom:20px}
+.post-slide .post-bar:after,.post-slide .post-bar:before{border:1px solid #38cfd8;bottom:-10px;content:"";display:block;position:absolute;right:36%;width:25px}
+.post-slide .post-bar:before{border:1px solid #ec3c6a;right:32%}
+.post-slide .post-bar li{color:#555;font-size:10px;margin-right:10px;display:inline-block}
+.post-slide .post-bar li a{font-size:13px;text-decoration:none;text-transform:uppercase;color:#ec3c6a}
+.post-slide .post-bar li a:hover{color:#ec3c6a}
+.post-slide .post-bar li i{color:#777;margin-right:5px}
+.post-slide .post-description{font-size:12px;line-height:21px;color:#444454}
+.owl-theme .owl-controls{margin-top:30px}
+.owl-theme .owl-controls .owl-page span{background:#fff;border:2px solid #37a6a4}
+.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span{background:#37a6a4}
+@media only screen and (max-width:990px){.post-slide .post-img{width:100%}
+.post-slide .post-review{width:100%;border-bottom:4px solid #ec3c6a}
+.post-slide .post-bar:before{left:0}
+.post-slide .post-bar:after{left:25px}
+}
+
+/*-------------------------sign up*/
+
+		.content{
+			background:#91b433;
+			width: 70%;
+		}
+		.content .form-content{
+			padding: 30px 10%;
+		}
+		.content .form-content .input-group .input-group-text{
+			background:#333;
+			color:#fff;
+			border:none;
+			border-radius:0;
+			font-weight: 600;
+		}
+		
+		.content .form-content .input-group input{
+			    border-radius: 0;
+		}
+		.content .form-content .input-group input:focus{
+			border-color: transparent;
+		}
+		.content .form-content h4{
+			margin-bottom:5%;
+			text-align: center;
+			font-size: 21px;
+			letter-spacing: 2px;
+			color: #fff;
+		}
+		.content .form-content button{
+			background: #333;
+			color: #fff;
+			border-radius: 0;
+			width: 20%;
+			margin-left: 40%;
+			text-align: center;
+			font-weight: 600;
+		}
+		/*foo--------------ter*/
+
+		.footer{
+			text-align: center;	
+			padding: 30px;
+
+		}
+		.footer h2{
+			font-family: 'Kaushan Script';
+			font-weight: 400;
+		}
+		.footer p{
+			font-family: serif;
+			font-size: 21px;
+		}
+		.footer .icons{
+font-size: 21px;
+color: green;
+
+		}
+		.footer a{
+			color: #3334;
+			padding: 10px 30px;
+		}
+			.footer a:hover{
+				color: #333;
+
+			}
